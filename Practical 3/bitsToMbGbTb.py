@@ -17,6 +17,4 @@ else:
     mb = convertBitsToMB(bits)
     gb = convertBitsToGB(bits)
     tb = convertBitsToTB(bits)
-    print(f"{bits:.2f} bits is equal to {mb:.2f} MB")
-    print(f"{bits:.2f} bits is equal to {gb:.2f} GB")
-    print(f"{bits:.2f} bits is equal to {tb:.2f} TB")
+    print(f"{bits:.2f} bits is equal to {mb:.2f} MB, {gb:.2f} GB, {tb:.2f} TB")
