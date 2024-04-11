@@ -16,6 +16,5 @@ class Student(Person):
         super().display_info()
         print("Roll Number:", self.roll_number)
 
-# Example usage:
 student = Student("Alice", 20, "S001")
 student.display_info()

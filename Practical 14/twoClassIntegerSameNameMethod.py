@@ -1,11 +1,12 @@
-class Printer:
-    def print_item(self, integer):
-        print("Integer:", integer)
-    
-    def print_item(self, character):
-        print("Character:", character)
+class PrintData:
+  def print_data(self, n, c):
+    print(f"{n} {c}")
 
-# Example usage:
-printer = Printer()
-printer.print_item(5)       # Calls the first method
-printer.print_item('A')     # Calls the second method
+  def print_data(self, c, n):
+    print(f"{c} {n}")
+
+
+obj = PrintData()
+
+obj.print_data(5, 'A') 
+obj.print_data('B', 3)  

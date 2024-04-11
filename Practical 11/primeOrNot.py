@@ -6,6 +6,9 @@ def is_prime(number):
             return False
     return True
 
-# Example usage:
-number = 17
-print(number, "is prime:", is_prime(number))
+# Test the function
+number = int(input("Enter a number: "))
+if is_prime(number):
+    print(number, "is a prime number")
+else:
+    print(number, "is not a prime number")

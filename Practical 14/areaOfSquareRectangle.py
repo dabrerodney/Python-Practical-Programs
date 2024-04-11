@@ -1,11 +1,15 @@
-class Shape:
-    def area(self, length, breadth=None):
-        if breadth is None:
-            print("Area of square:", length ** 2)
-        else:
-            print("Area of rectangle:", length * breadth)
+class ShapeArea:
+  def calculate_area(self, side):
+    area = side * side
+    print(f"Area of the square: {area}")
 
-# Example usage:
-shape = Shape()
-shape.area(5)               # Calls the first method
-shape.area(4, 6)            # Calls the second method
+  def calculate_area(self, length, breadth):
+    area = length * breadth
+    print(f"Area of the rectangle: {area}")
+
+# Create an object of the ShapeArea class
+obj = ShapeArea()
+
+# Call the calculate_area methods with different parameters
+obj.calculate_area(5)  # Square with side 5
+obj.calculate_area(3, 4)  # Rectangle with length 3 and breadth 4
